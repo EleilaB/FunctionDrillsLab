@@ -38,6 +38,9 @@ let jsNinja = () => `I am a JavaScript ninja!`
 
 //CODE HERE
 
+let printName = name => console.log(name)
+
+printName('Cameron')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -52,6 +55,9 @@ let jsNinja = () => `I am a JavaScript ninja!`
 
 //CODE HERE
 
+let greeting = name => console.log(`Hello, ` + name)
+
+greeting('Jake')
 
 ////////////////// PROBLEM 5 ////////////////////
 
