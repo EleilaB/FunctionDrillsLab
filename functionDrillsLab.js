@@ -91,7 +91,13 @@ compareNums(1, 2)
 */
 
 //CODE HERE
+function add(num1, num2){
+  let number1 = parseInt(num1);
+  let number2 = parseInt(num2);
+  return number1 += number2;
+}
 
+let sum = add(1, `2`)
 
 ////////////////// PROBLEM 7 ////////////////////
 
