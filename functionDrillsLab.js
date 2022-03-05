@@ -357,6 +357,7 @@ let totalFrogs = purchaseFrogs(41)
 
 //CODE HERE
 
+// I... already did that with the first one...
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
@@ -366,6 +367,20 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 
+function determineAscending(numArr){
+  let ascendingNums = 0
+  for(let i = 0; i < numArr.length; i++){
+    if(numArr[(i + 1)] >= numArr[i]){
+      ascendingNums ++
+    }
+  };
+  if(ascendingNums === numArr.length){
+    return true
+  }else return false
+}
+
+var arrayIsAscending = determineAscending(sampleArray)
+console.log(String(arrayIsAscending))
 
 ////////////////// PROBLEM 22 ////////////////////
 
