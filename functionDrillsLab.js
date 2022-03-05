@@ -1,183 +1,183 @@
-/*
-  Some of the following questions will ask you to use
-  arrow function syntax. On the problems that don't,
-  feel free to practice with any syntax.
-*/
+// /*
+//   Some of the following questions will ask you to use
+//   arrow function syntax. On the problems that don't,
+//   feel free to practice with any syntax.
+// */
 
 
-////////////////// PROBLEM 1 ////////////////////
-/*
-  Create a function called helloWorld which simply console logs 'Hello, World!'
-  Call the function.
-*/
+// ////////////////// PROBLEM 1 ////////////////////
+// /*
+//   Create a function called helloWorld which simply console logs 'Hello, World!'
+//   Call the function.
+// */
 
-//CODE HERE
+// //CODE HERE
 
-function helloWorld(){
-  console.log(`Hello, World!`)
-}
+// function helloWorld(){
+//   console.log(`Hello, World!`)
+// }
 
-helloWorld()
+// helloWorld()
 
-////////////////// PROBLEM 2 ////////////////////
+// ////////////////// PROBLEM 2 ////////////////////
 
-/*
-    Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
-*/
+// /*
+//     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
+// */
 
-//CODE HERE
+// //CODE HERE
 
-let jsNinja = () => `I am a JavaScript ninja!`
+// let jsNinja = () => `I am a JavaScript ninja!`
 
-////////////////// PROBLEM 3 ////////////////////
-/*
-  Create a function called printName which takes in a person's name and console logs it.
-  Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
-  Call the function, passing in an argument.
-*/
+// ////////////////// PROBLEM 3 ////////////////////
+// /*
+//   Create a function called printName which takes in a person's name and console logs it.
+//   Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
+//   Call the function, passing in an argument.
+// */
 
-//CODE HERE
+// //CODE HERE
 
-let printName = name => console.log(name)
+// let printName = name => console.log(name)
 
-printName('Cameron')
+// printName('Cameron')
 
-////////////////// PROBLEM 4 ////////////////////
-/*
-  Create a function called greeting that
-  accepts name as its only parameter.
-  Convert the name param into a string.
-  greeting should log the string 'Hello, '
-  plus the value of the name parameter.
-  Ex. If Jake were passed in as the argument, the function would log 'Hello, Jake'
-  Make sure to call your function and pass in an argument.
-*/
+// ////////////////// PROBLEM 4 ////////////////////
+// /*
+//   Create a function called greeting that
+//   accepts name as its only parameter.
+//   Convert the name param into a string.
+//   greeting should log the string 'Hello, '
+//   plus the value of the name parameter.
+//   Ex. If Jake were passed in as the argument, the function would log 'Hello, Jake'
+//   Make sure to call your function and pass in an argument.
+// */
 
-//CODE HERE
+// //CODE HERE
 
-let greeting = name => console.log(`Hello, ` + name)
+// let greeting = name => console.log(`Hello, ` + name)
 
-greeting('Jake')
+// greeting('Jake')
 
-////////////////// PROBLEM 5 ////////////////////
+// ////////////////// PROBLEM 5 ////////////////////
 
-/*
-    Write an arrow function called 'compareNums' that takes in 2 parameters, 
-    which will be numbers. 
-    The function should return the bigger number. 
-    If the numbers are the same, just return the number.
+// /*
+//     Write an arrow function called 'compareNums' that takes in 2 parameters, 
+//     which will be numbers. 
+//     The function should return the bigger number. 
+//     If the numbers are the same, just return the number.
 
-    Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
-*/
+//     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
+// */
 
-//CODE HERE
+// //CODE HERE
 
-let compareNums = (num1, num2) => {
-  if(num1 > num2){
-    return num1
-  }else if(num1 < num2){
-    return num2
-  }else return num1
-}
+// let compareNums = (num1, num2) => {
+//   if(num1 > num2){
+//     return num1
+//   }else if(num1 < num2){
+//     return num2
+//   }else return num1
+// }
 
-compareNums(1, 2)
+// compareNums(1, 2)
 
-////////////////// PROBLEM 6 ////////////////////
-/*
-  Create a function called add that takes in two parameters 
-  Inside, convert the arguments to be numbers (just in case strings get sent in)
-  The add function should RETURN the two parameters added together.
-  Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
-*/
+// ////////////////// PROBLEM 6 ////////////////////
+// /*
+//   Create a function called add that takes in two parameters 
+//   Inside, convert the arguments to be numbers (just in case strings get sent in)
+//   The add function should RETURN the two parameters added together.
+//   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
+// */
 
-//CODE HERE
-function add(num1, num2){
-  let number1 = parseInt(num1);
-  let number2 = parseInt(num2);
-  return number1 += number2;
-}
+// //CODE HERE
+// function add(num1, num2){
+//   let number1 = parseInt(num1);
+//   let number2 = parseInt(num2);
+//   return number1 += number2;
+// }
 
-let sum = add(1, `2`)
+// let sum = add(1, `2`)
 
-////////////////// PROBLEM 7 ////////////////////
+// ////////////////// PROBLEM 7 ////////////////////
 
-/*
-  Which syntax was used to create the function below?
-  Uncomment the answer underneath.
-*/
+// /*
+//   Which syntax was used to create the function below?
+//   Uncomment the answer underneath.
+// */
 
-const exclaim = function(str) {
-  return str.toUpperCase() + '!!!'
-}
+// const exclaim = function(str) {
+//   return str.toUpperCase() + '!!!'
+// }
 
-// arrow
-// declaration
-expression
-
-
-
-////////////////// PROBLEM 8 ////////////////////
-
-/*
-  Which syntax was used to create the function below?
-  Uncomment the answer underneath.
-*/
-
-const exclaimTwo = str => {
-  return str.toUpperCase() + '!!!'
-}
-
-arrow
-// declaration
-// expression
-
-/*
-  Rewrite exclaimTwo to be a single line.
-  Call your new function exclaimThree
-
-  Brownie points if you use a template string
-*/
-
-const exclaimThree = str => str.toUpperCase() + '!!!'
-
-////////////////// PROBLEM 9 ////////////////////
-
-/*
-  Which syntax was used to create the function below?
-  Uncomment the answer underneath.
-*/
-
-function exclaimFour(str) {
-  return str.toUpperCase() + '!!!'
-}
-
-// arrow
-declaration
+// // arrow
+// // declaration
 // expression
 
 
-////////////////// PROBLEM 10 ////////////////////
-/*
-  Write a function called nameCheck that takes in a name parameter.
-  nameCheck should check if the name equals 'Steven'. If it does, return 'What is up Steven?'
-  If the name parameter is equal to Bryan, return 'Hey Bryan!'
-  If the name parameter is anything else, return 'Cool name, NAMEPARAM' (with NAMEPARAM being the value of the name parameter being passed in).
-  Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
-*/
 
-//CODE HERE
+// ////////////////// PROBLEM 8 ////////////////////
+
+// /*
+//   Which syntax was used to create the function below?
+//   Uncomment the answer underneath.
+// */
+
+// const exclaimTwo = str => {
+//   return str.toUpperCase() + '!!!'
+// }
+
+// arrow
+// // declaration
+// // expression
+
+// /*
+//   Rewrite exclaimTwo to be a single line.
+//   Call your new function exclaimThree
+
+//   Brownie points if you use a template string
+// */
+
+// const exclaimThree = str => str.toUpperCase() + '!!!'
+
+// ////////////////// PROBLEM 9 ////////////////////
+
+// /*
+//   Which syntax was used to create the function below?
+//   Uncomment the answer underneath.
+// */
+
+// function exclaimFour(str) {
+//   return str.toUpperCase() + '!!!'
+// }
+
+// // arrow
+// declaration
+// // expression
+
+
+// ////////////////// PROBLEM 10 ////////////////////
+// /*
+//   Write a function called nameCheck that takes in a name parameter.
+//   nameCheck should check if the name equals 'Steven'. If it does, return 'What is up Steven?'
+//   If the name parameter is equal to Bryan, return 'Hey Bryan!'
+//   If the name parameter is anything else, return 'Cool name, NAMEPARAM' (with NAMEPARAM being the value of the name parameter being passed in).
+//   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
+// */
+
+// //CODE HERE
 
 function nameCheck(name){
-  if(name.includes('Steven')){
+  if(name === 'Steven'){
     return 'What is up Steven?'
-  }else if(name.includes('Bryan')){
+  }else if(name === 'Bryan'){
     return 'Hey Bryan!'
   }else{
     return 'Cool name, ' + name
   }
 }
 
-let nameGreeting = nameCheck('Lionel')
+let nameGreeting = nameCheck('Bryan')
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -191,6 +191,17 @@ let nameGreeting = nameCheck('Lionel')
 
 //CODE HERE
 
+function faveColorFinder(color){
+  if(color === 'red'){
+    return 'red is a great color'
+  }else if(color === 'green'){
+    return 'green is a solid favorite color'
+  }else if(color === 'black'){
+    return 'so trendy'
+  }else return 'you need to evaluate your favorite color'
+}
+
+let colorRating = faveColorFinder('green')
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
