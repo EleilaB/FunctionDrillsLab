@@ -251,6 +251,7 @@ let oddChecker = thatsOdd(17)
 
 //CODE HERE
 
+let bestMovie = movie => movie + ' is the best movie ever!'
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
