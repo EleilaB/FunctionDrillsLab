@@ -231,6 +231,13 @@ printAllNames(namesArr)
 
 //CODE HERE
 
+let thatsOdd = num => {
+  if(num % 2 === 0){
+    return `That's not odd!`
+  }else return `That is odd indeed!`
+}
+
+let oddChecker = thatsOdd(17)
 
 ////////////////// PROBLEM 14 ////////////////////
 
