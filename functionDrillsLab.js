@@ -167,6 +167,17 @@ declaration
 
 //CODE HERE
 
+function nameCheck(name){
+  if(name.includes('Steven')){
+    return 'What is up Steven?'
+  }else if(name.includes('Bryan')){
+    return 'Hey Bryan!'
+  }else{
+    return 'Cool name, ' + name
+  }
+}
+
+let nameGreeting = nameCheck('Lionel')
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
