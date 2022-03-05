@@ -340,6 +340,15 @@ function emailCheck(email){
 
 //CODE HERE
 
+function purchaseFrogs(spending){
+  let frogPrice = 3;
+  let frogCount = 0
+  for(let i = frogPrice; i <= spending; i += frogPrice){
+    frogCount += 1
+  }return frogCount
+}
+
+let totalFrogs = purchaseFrogs(41)
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
