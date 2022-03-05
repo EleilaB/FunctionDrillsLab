@@ -304,6 +304,12 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 
+function makeUpperCase(str){
+  var upperCase = str.toUpperCase();
+  console.log(upperCase)
+}
+
+makeUpperCase(sampleString)
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
